@@ -1,7 +1,6 @@
 # 💡 Awesome Developer GPT Prompts
 
-<img src="https://img.shields.io/badge/status-work_in_progress-green" />
-<img src="https://img.shields.io/badge/gpt-4o+-blue" />
+<img src="https://img.shields.io/badge/status-work_in_progress-green" /> <img src="https://img.shields.io/badge/gpt-4o+-blue" />
 
 Welcome to **Awesome Developer GPT Prompts** – a curated collection of prompts designed specifically to enhance your developer workflow and productivity. Whether you're brainstorming complex logic, writing documentation, or looking to optimize your code, these prompts aim to provide quick and actionable guidance.
 
