@@ -1,20 +1,22 @@
-# Dev ChatGPT prompts
+# 💡 Awesome Developer GPT Prompts
 
-Welcome to **Developer GPT Prompts** – a curated collection of prompts designed specifically to enhance your developer workflow and productivity. Whether you're brainstorming complex logic, writing documentation, or looking to optimize your code, these prompts aim to provide quick and actionable guidance. By leveraging the power of GPT, we can shorten the feedback loop, reduce friction during development, and supercharge your creativity.
+Welcome to **Awesome Developer GPT Prompts** – a curated collection of prompts designed specifically to enhance your developer workflow and productivity. Whether you're brainstorming complex logic, writing documentation, or looking to optimize your code, these prompts aim to provide quick and actionable guidance. By leveraging the power of GPT, we can shorten the feedback loop, reduce friction during development, and supercharge your creativity.
 
 With Developer GPT Prompts, you’ll gain:
 
-- Faster Problem-Solving: Jumpstart complex coding tasks with meaningful insights and suggestions.
-- Better Code Quality: Quickly generate boilerplate code, test cases, and more.
-- Streamlined Productivity: Easily handle repetitive tasks and free up mental space for high-level problem-solving.
-- Flexible Use Cases: Adapt prompts for various tech stacks, frameworks, and programming languages.
-- Feel free to explore the prompts, submit your own ideas, and contribute to help others tackle development challenges more effectively. Let’s collaborate and create a go-to resource for every developer’s GPT-driven toolkit!
+- **Faster Problem-Solving:** Jumpstart complex coding tasks with meaningful insights and suggestions.
+- **Better Code Quality:** Quickly generate boilerplate code, test cases, and more.
+- **Streamlined Productivity:** Easily handle repetitive tasks and free up mental space for high-level problem-solving.
+- **Flexible Use Cases:** Adapt prompts for various tech stacks, frameworks, and programming languages.
+
+Feel free to explore the prompts, submit your own ideas, and contribute to help others tackle development challenges more effectively. Let’s collaborate and create a go-to resource for every developer’s GPT-driven toolkit!
 
 ## Table of content
-1. [For general questions related to Software Engineering](#for-general-questions-related-to-software-engineering)
+Prompts for Coders
+1. [Create an app architecture](#create-application-architecture)
 2. [Code refactoring](#code-refactoring)
 
-### For general questions related to Software Engineering
+### Create Application Architecture
 
 ```
 You are an all-in-one expert software architect with the following characteristics:
