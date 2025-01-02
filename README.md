@@ -1,19 +1,15 @@
 # 💡 Awesome Developer GPT Prompts
 
-Welcome to **Awesome Developer GPT Prompts** – a curated collection of prompts designed specifically to enhance your developer workflow and productivity. Whether you're brainstorming complex logic, writing documentation, or looking to optimize your code, these prompts aim to provide quick and actionable guidance. By leveraging the power of GPT, we can shorten the feedback loop, reduce friction during development, and supercharge your creativity.
+Welcome to **Awesome Developer GPT Prompts** – a curated collection of prompts designed specifically to enhance your developer workflow and productivity. Whether you're brainstorming complex logic, writing documentation, or looking to optimize your code, these prompts aim to provide quick and actionable guidance. 
 
-With Developer GPT Prompts, you’ll gain:
+This repo is still in WIP.
 
-- **Faster Problem-Solving:** Jumpstart complex coding tasks with meaningful insights and suggestions.
-- **Better Code Quality:** Quickly generate boilerplate code, test cases, and more.
-- **Streamlined Productivity:** Easily handle repetitive tasks and free up mental space for high-level problem-solving.
-- **Flexible Use Cases:** Adapt prompts for various tech stacks, frameworks, and programming languages.
+Feel free to explore the prompts, submit your own ideas, and contribute to the repo. Let’s collaborate and create a go-to resource for every developer’s GPT-driven toolkit!
 
-Feel free to explore the prompts, submit your own ideas, and contribute to help others tackle development challenges more effectively. Let’s collaborate and create a go-to resource for every developer’s GPT-driven toolkit!
+# 📍 Preparations
 
-# Architecture and Design
+I highly recommend to create a separate project in ChatGPT and use prompts below as instructions. To understand how to create a project, use this [**link**](https://help.openai.com/en/articles/10169521-using-projects-in-chatgpt).
 
-💡 ChatGPT Project Preset:
 ```text
 You are an all-in-one expert software architect with the following characteristics:
 
@@ -58,96 +54,219 @@ Given these characteristics, your task is to produce detailed architectural desi
 
 ## Prompts examples
 
-### E-commerce Microservices Platform
+### Daily routine
+
+#### Refactoring & Code Cleanup
 
 ```text
-Design an architecture for a high-traffic e-commerce platform with AI-driven product recommendations. The platform should be based on microservices, deployed on a cloud provider, and capable of handling seasonal spikes. We need to incorporate a recommendation engine and a robust DevOps pipeline. Please include details on the data flow, caching strategy, load balancing, service-to-service communication, CI/CD, and QA testing approaches.
+ Please refactor the following {Language} code that uses the {Framework} framework. 
+- Use {Plugin/Tool} (if applicable) for linting or static analysis.
+- Retain current functionality.
+
+[PASTE YOUR CODE HERE]
 ```
 
-### Enterprise Data Lake & Analytics
+#### Performance Optimization
 
 ```text
-Propose an end-to-end architecture for an enterprise data lake and analytics platform. We need to ingest data from multiple internal and external sources (IoT devices, CRM, social media APIs). The platform should support real-time data processing, transformations, and both structured and unstructured data. We also want to incorporate an ML pipeline for predictive analytics. Outline data storage options, the ETL/ELT process, security considerations, and how different teams can access the analytics layer.
+Our application is experiencing slow response times under heavy load. 
+- We use Language} and {Framework}.
+- Identify bottlenecks and propose specific changes to improve performance.
+- Consider using {Plugin/Tool} (e.g., profilers, performance analyzers) if relevant.
+- Provide insights on caching, concurrency, or data structure improvements.
+- Explain trade-offs and ensure the changes remain cost-effective.
+
+[OPTIONAL: SHARE CODE SNIPPETS OR SCENARIO]
 ```
 
-### Mobile Banking App with Security Emphasis
+#### Code Quality & Best Practices Review
 
 ```text
-We’re designing a mobile banking application focusing on security and performance. Provide an architecture that ensures compliance with financial regulations (e.g., PCI-DSS, GDPR) and includes advanced security measures like encryption, MFA, and fraud detection. Show how the backend services, data storage, and integration with third-party financial services should be structured. Also outline how to implement a robust QA strategy (including regression and penetration testing).
+Review the following code written using {Language} and {Framework} for:
+2. Clean coding principles (naming, structure, readability).
+3. Best practices and design patterns.
+4. Potential bugs or antipatterns.
+5. Opportunities to simplify or modularize the code.
+6. Compliance with {Plugin/Tool} (e.g., ESLint, Checkstyle) configurations.
+
+[PASTE YOUR CODE HERE]
 ```
 
-### Global SaaS Platform with Multi-Region Deployment
+#### Design Pattern Implementation
 
 ```text
-We need a global SaaS application that runs in multiple regions (US, EU, APAC) with low latency and high availability. It should have a modular microservices design, support multi-tenancy, and automatically scale to handle diverse usage patterns. Provide details on the best database approach (SQL/NoSQL or hybrid), caching strategies, region failover, and recommended technology stack. Also discuss DevOps best practices for multi-region deployments.
+We have a codebase in {Language} using {Framework}, and we want to introduce the {Design Pattern} pattern (e.g., Factory, Singleton, Observer, etc.).
+- Show how to refactor or integrate the {Design Pattern} into our existing code.
+- Explain the benefits and potential trade-offs.
+- Suggest any relevant {Plugin/Tool} or library that might simplify this pattern.
+
+[OPTIONAL: PASTE YOUR CODE OR EXPLAIN YOUR CURRENT ARCHITECTURE]
 ```
 
-### Legacy System Modernization
+#### Database Query & Schema Optimization
 
 ```text
-We have a large legacy monolithic application currently running on on-premises servers. We want to migrate to a cloud-native microservices or serverless architecture (whichever is more suitable) while maintaining business continuity. Describe a phased migration plan, highlight any refactoring needed, and propose a high-level architecture. Include details on data migration, integration with existing systems, and a testing and rollback strategy.
+Our {Database} queries are slow or returning inconsistent results. 
+- Provide recommendations to optimize our SQL/NoSQL queries.
+- Suggest any schema changes or indexing strategies.
+- Consider using {Tool/Plugin} (e.g., EXPLAIN ANALYZE, indexing advisors) if available.
+- Outline potential impacts on our {Framework} application.
+
+[PASTE SAMPLE QUERIES OR EXPLAIN SCHEMA HERE]
 ```
 
-### AI Chatbot Integration
+#### Security Hardening & Audit
 
 ```text
-Our customer support platform needs an AI chatbot integration. We want it to leverage a large language model and have a feedback loop for continuous improvement. Provide a reference architecture showing how the chatbot, NLP pipeline, and user data interact. Include a plan for logging conversations, training new models, and ensuring data privacy. Additionally, specify best practices for deployment and versioning of the chatbot service.
+- Perform a security audit of our code, looking for common vulnerabilities (e.g., XSS, SQL injection, CSRF).
+- Suggest improvements or additional checks (e.g., using {Plugin/Tool}, adopting best practices like OWASP Top 10).
+- Propose a plan for ongoing vulnerability scanning and penetration testing.
+
+[PASTE YOUR CODE OR SECURITY CONCERNS HERE]
 ```
 
-### Observability & Monitoring Strategy 
+#### CI/CD Pipeline Enhancement
 
 ```text
-We want to establish a comprehensive observability and monitoring strategy across a microservices-based platform. Outline how logs, metrics, and traces should be collected and aggregated. Discuss the recommended tooling (e.g., Prometheus, Grafana, ELK stack, OpenTelemetry) and how alerts should be configured. Provide an architecture diagram showing how each service publishes logs/metrics, how we set up dashboards, and how teams handle incident response.
+Our {Language}-{Framework} application needs a robust CI/CD pipeline.
+- Suggest improvements for code integration, building, testing, and deployment.
+- Integrate {Plugin/Tool} for automated code analysis, security scans, and artifact management.
+- Provide a high-level YAML or configuration file example, if relevant.
+- Explain how to handle rollbacks and environment-specific deployments.
 ```
 
-### Healthcare Application with Compliance and Machine Learning
+#### Testing Strategy & Coverage Improvement
 
 ```text
-Create an architecture for a healthcare application that uses machine learning to predict patient readmissions. The system must comply with HIPAA and handle sensitive patient data securely. Include data ingestion, cleaning, ML model training, and deployment strategies. Highlight user authentication and authorization, encryption, auditing logs, and how you would handle compliance requirements (e.g., data residency, de-identification).
+We use {Language}, {Framework}, and {Test Framework} in our QA.
+- Assess our current testing strategy and coverage.
+- Recommend additional test types (unit, integration, E2E) and how to implement them.
+- Suggest {Plugin/Tool} for coverage reports and test automation.
+- Provide sample test cases or configurations.
+
+[OPTIONAL: SHARE CODE OR TEST RESULTS HERE]
 ```
 
-### Serverless Event-Driven Application
+####  API & Microservices Performance Review
 
 ```text
-We want a serverless, event-driven system to process real-time streams of user activity data (e.g., clicks, page views, location) and generate analytics dashboards. Propose a cloud-native architecture that uses managed services for event ingestion, processing, and storage. Detail how to handle sudden spikes in traffic, how the data flows through serverless functions, and how to integrate with a real-time analytics dashboard.
+We have a microservices architecture built with {Language} on {Framework}. We are experiencing latency and potential bottlenecks in our API layer. 
+- Analyze our service-to-service communication, data serialization, and network overhead.
+- Propose optimizations (e.g., caching, asynchronous messaging, circuit breakers).
+- Recommend any {Plugin/Tool} for load testing and distributed tracing.
+- Provide a high-level diagram or explanation of the improved architecture.
+
+[OPTIONAL: DESCRIBE YOUR CURRENT MICROSERVICES SETUP]
 ```
 
-###  Custom CRM Platform with AI-driven Insights
+### General scenarios
+
+#### E-commerce Microservices Platform
 
 ```text
-We are building a custom CRM platform for a mid-sized organization. The CRM should track leads, manage customer interactions, and use AI/ML to provide lead-scoring and sales forecasting. Outline a modular, scalable architecture (microservices vs. a monolith?), the data model, and how to incorporate an ML pipeline. Specify recommended DevOps processes, QA strategies, and performance benchmarks to aim for.
+Design an architecture for a high-traffic e-commerce platform with AI-driven product 
+recommendations. The platform should be based on microservices, deployed on 
+a cloud provider, and capable of handling seasonal spikes. We need to 
+incorporate a recommendation engine and a robust DevOps pipeline. Please 
+include details on the data flow, caching strategy, load balancing
+service-to-service communication, CI/CD, and QA testing approaches.
 ```
 
-Before using this prompt, replace placeholders for your language, frameworks and plugins.
+#### Enterprise Data Lake & Analytics
 
+```text
+Propose an end-to-end architecture for an enterprise data lake and analytics platform.
+We need to ingest data from multiple internal and external sources (IoT devices, CRM,
+social media APIs). The platform should support real-time data processing,
+transformations, and both structured and unstructured data. We also want to
+incorporate an ML pipeline for predictive analytics. Outline data storage options,
+the ETL/ELT process, security considerations, and how different teams can access
+the analytics layer.
 ```
-You are a senior-level software engineer with extensive experience in refactoring and optimizing code. You are an expert at applying best practices, patterns, and principles (such as SOLID, DRY, KISS) to code written in a variety of languages and frameworks. You are proficient in using plugins and tools for static analysis, automated refactoring, and code quality checks.
 
-1. Primary Objectives:
-   - Identify opportunities to improve the structure, readability, and maintainability of the given code.
-   - Ensure the refactored code follows industry best practices, design principles, and coding standards.
-   - Optimize performance where feasible (e.g., removing redundant operations, improving data structures or algorithms).
+#### Mobile Banking App with Security Emphasis
 
-2. Technologies & Placeholders:
-   - Languages: {Language 1}, {Language 2}, etc.
-   - Frameworks: {Framework A}, {Framework B}, etc.
-   - Plugins/Tools: {Plugin or Linter Name}, {Static Analysis Tool}, {Refactoring IDE Plugin}, etc.
+```text
+We’re designing a mobile banking application focusing on security and performance.
+Provide an architecture that ensures compliance with financial regulations (e.g.,
+PCI-DSS, GDPR) and includes advanced security measures like encryption, MFA, and
+fraud detection. Show how the backend services, data storage, and integration with
+third-party financial services should be structured. Also outline how to implement
+a robust QA strategy (including regression and penetration testing).
+```
 
-3. Constraints & Guidelines:
-   - Maintain Functional Parity: The refactored code must preserve existing functionality and comply with existing tests (if provided).
-   - Use Idiomatic Style: The new code should follow idiomatic conventions of {Language/Framework}.
-   - Document Changes: Where relevant, provide short explanatory comments describing the rationale behind significant refactoring changes.
+#### Global SaaS Platform with Multi-Region Deployment
 
-4. Expected Deliverables:
-   - Refactored Code: Clearly show or explain what changes were made.
-   - Justification: Provide reasoning or references to best practices for each major change.
-   - Testing & Validation: Briefly outline steps or methods to validate that the refactored code is functioning as intended (e.g., existing test suites, manual testing, etc.).
-   - Recommendations: Suggest additional improvements or next steps (e.g., migrating to a newer version of {Framework}, adding linting or coverage tools, etc.).
+```text
+We need a global SaaS application that runs in multiple regions (US, EU, APAC) with
+low latency and high availability. It should have a modular microservices design,
+support multi-tenancy, and automatically scale to handle diverse usage patterns.
+Provide details on the best database approach (SQL/NoSQL or hybrid), caching
+strategies, region failover, and recommended technology stack. Also discuss DevOps
+best practices for multi-region deployments.
+```
 
-5. Communication Style:
-   - Clarity: Provide bullet-point explanations where possible.
-   - Technical Depth: Include enough detail that an intermediate developer could understand and learn from the refactoring choices.
-   - Conciseness: Keep the final output organized and actionable.
+#### Legacy System Modernization
 
-Given the above guidelines, your task is to refactor the provided code snippet(s) while explaining the reasoning behind the changes, referencing any relevant design patterns and best practices. Ask clarifying questions if necessary.
+```text
+We have a large legacy monolithic application currently running on on-premises
+servers. We want to migrate to a cloud-native microservices or serverless
+architecture (whichever is more suitable) while maintaining business continuity.
+Describe a phased migration plan, highlight any refactoring needed, and propose
+a high-level architecture. Include details on data migration, integration with
+existing systems, and a testing and rollback strategy.
+```
+
+#### AI Chatbot Integration
+
+```text
+Our customer support platform needs an AI chatbot integration. We want it to leverage
+a large language model and have a feedback loop for continuous improvement. Provide a
+reference architecture showing how the chatbot, NLP pipeline, and user data
+interact. Include a plan for logging conversations, training new models, and
+ensuring data privacy. Additionally, specify best practices for deployment and
+versioning of the chatbot service.
+```
+
+#### Observability & Monitoring Strategy 
+
+```text
+We want to establish a comprehensive observability and monitoring strategy across a
+microservices-based platform. Outline how logs, metrics, and traces should be
+collected and aggregated. Discuss the recommended tooling (e.g., Prometheus,
+Grafana, ELK stack, OpenTelemetry) and how alerts should be configured. Provide 
+an architecture diagram showing how each service publishes logs/metrics, how we
+set up dashboards, and how teams handle incident response.
+```
+
+#### Healthcare Application with Compliance and Machine Learning
+
+```text
+Create an architecture for a healthcare application that uses machine learning to
+predict patient readmissions. The system must comply with HIPAA and handle sensitive
+patient data securely. Include data ingestion, cleaning, ML model training, and
+deployment strategies. Highlight user authentication and authorization, encryption,
+auditing logs, and how you would handle compliance requirements (e.g., data
+residency, de-identification).
+```
+
+#### Serverless Event-Driven Application
+
+```text
+We want a serverless, event-driven system to process real-time streams of user
+activity data (e.g., clicks, page views, location) and generate analytics dashboards.
+Propose a cloud-native architecture that uses managed services for event ingestion,
+processing, and storage. Detail how to handle sudden spikes in traffic, how the
+data flows through serverless functions, and how to integrate with a real-time
+analytics dashboard.
+```
+
+#### Custom CRM Platform with AI-driven Insights
+
+```text
+We are building a custom CRM platform for a mid-sized organization. The CRM should
+track leads, manage customer interactions, and use AI/ML to provide lead-scoring and
+sales forecasting. Outline a modular, scalable architecture (microservices vs. a
+monolith?), the data model, and how to incorporate an ML pipeline. Specify
+recommended DevOps processes, QA strategies, and performance benchmarks to aim for.
 ```
