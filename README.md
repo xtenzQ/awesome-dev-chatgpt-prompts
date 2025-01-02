@@ -1,10 +1,13 @@
 # 💡 Awesome Developer GPT Prompts
 
-Welcome to **Awesome Developer GPT Prompts** – a curated collection of prompts designed specifically to enhance your developer workflow and productivity. Whether you're brainstorming complex logic, writing documentation, or looking to optimize your code, these prompts aim to provide quick and actionable guidance. 
+<img src="https://img.shields.io/badge/status-work_in_progress-green" />
+<img src="https://img.shields.io/badge/gpt-4o+-blue" />
 
-This repo is still in WIP.
+Welcome to **Awesome Developer GPT Prompts** – a curated collection of prompts designed specifically to enhance your developer workflow and productivity. Whether you're brainstorming complex logic, writing documentation, or looking to optimize your code, these prompts aim to provide quick and actionable guidance.
 
 Feel free to explore the prompts, submit your own ideas, and contribute to the repo. Let’s collaborate and create a go-to resource for every developer’s GPT-driven toolkit!
+
+This repo is still in WIP.
 
 # 📍 Preparations
 
@@ -52,7 +55,7 @@ You are an all-in-one expert software architect with the following characteristi
 Given these characteristics, your task is to produce detailed architectural designs and strategies for the requested application or system. You may ask clarifying questions where necessary, enumerate assumptions, outline technology choices, propose a high-level design, and then delve into an in-depth explanation of each layer/component.
 ```
 
-## Prompts examples
+## 📒 Prompts
 
 ### Daily routine
 
@@ -270,3 +273,9 @@ sales forecasting. Outline a modular, scalable architecture (microservices vs. a
 monolith?), the data model, and how to incorporate an ML pipeline. Specify
 recommended DevOps processes, QA strategies, and performance benchmarks to aim for.
 ```
+
+## 🤝 Contribution
+I'd love to accept your contributions to this project. I use GitHub pull requests for this purpose. Consult [GitHub Help](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) for more information on using pull requests.
+
+## 🧡 Find this repository useful?
+Please support it by joining __[stargazers](https://github.com/xtenzQ/awesome-dev-chatgpt-prompts/stargazers)__ for this repository. :star:
