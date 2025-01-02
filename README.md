@@ -11,14 +11,10 @@ With Developer GPT Prompts, you’ll gain:
 
 Feel free to explore the prompts, submit your own ideas, and contribute to help others tackle development challenges more effectively. Let’s collaborate and create a go-to resource for every developer’s GPT-driven toolkit!
 
-## Table of content
-Prompts for Coders
-1. [Create an app architecture](#create-application-architecture)
-2. [Code refactoring](#code-refactoring)
+# Architecture and Design
 
-### Create Application Architecture
-
-```
+💡 ChatGPT Project Preset:
+```text
 You are an all-in-one expert software architect with the following characteristics:
 
 1. Role & Responsibilities:
@@ -58,10 +54,69 @@ You are an all-in-one expert software architect with the following characteristi
    - Use concise, clear, and technically sound language suitable for stakeholders of varying technical backgrounds.
 
 Given these characteristics, your task is to produce detailed architectural designs and strategies for the requested application or system. You may ask clarifying questions where necessary, enumerate assumptions, outline technology choices, propose a high-level design, and then delve into an in-depth explanation of each layer/component.
-
 ```
 
-### Code refactoring
+## Prompts examples
+
+### E-commerce Microservices Platform
+
+```text
+Design an architecture for a high-traffic e-commerce platform with AI-driven product recommendations. The platform should be based on microservices, deployed on a cloud provider, and capable of handling seasonal spikes. We need to incorporate a recommendation engine and a robust DevOps pipeline. Please include details on the data flow, caching strategy, load balancing, service-to-service communication, CI/CD, and QA testing approaches.
+```
+
+### Enterprise Data Lake & Analytics
+
+```text
+Propose an end-to-end architecture for an enterprise data lake and analytics platform. We need to ingest data from multiple internal and external sources (IoT devices, CRM, social media APIs). The platform should support real-time data processing, transformations, and both structured and unstructured data. We also want to incorporate an ML pipeline for predictive analytics. Outline data storage options, the ETL/ELT process, security considerations, and how different teams can access the analytics layer.
+```
+
+### Mobile Banking App with Security Emphasis
+
+```text
+We’re designing a mobile banking application focusing on security and performance. Provide an architecture that ensures compliance with financial regulations (e.g., PCI-DSS, GDPR) and includes advanced security measures like encryption, MFA, and fraud detection. Show how the backend services, data storage, and integration with third-party financial services should be structured. Also outline how to implement a robust QA strategy (including regression and penetration testing).
+```
+
+### Global SaaS Platform with Multi-Region Deployment
+
+```text
+We need a global SaaS application that runs in multiple regions (US, EU, APAC) with low latency and high availability. It should have a modular microservices design, support multi-tenancy, and automatically scale to handle diverse usage patterns. Provide details on the best database approach (SQL/NoSQL or hybrid), caching strategies, region failover, and recommended technology stack. Also discuss DevOps best practices for multi-region deployments.
+```
+
+### Legacy System Modernization
+
+```text
+We have a large legacy monolithic application currently running on on-premises servers. We want to migrate to a cloud-native microservices or serverless architecture (whichever is more suitable) while maintaining business continuity. Describe a phased migration plan, highlight any refactoring needed, and propose a high-level architecture. Include details on data migration, integration with existing systems, and a testing and rollback strategy.
+```
+
+### AI Chatbot Integration
+
+```text
+Our customer support platform needs an AI chatbot integration. We want it to leverage a large language model and have a feedback loop for continuous improvement. Provide a reference architecture showing how the chatbot, NLP pipeline, and user data interact. Include a plan for logging conversations, training new models, and ensuring data privacy. Additionally, specify best practices for deployment and versioning of the chatbot service.
+```
+
+### Observability & Monitoring Strategy 
+
+```text
+We want to establish a comprehensive observability and monitoring strategy across a microservices-based platform. Outline how logs, metrics, and traces should be collected and aggregated. Discuss the recommended tooling (e.g., Prometheus, Grafana, ELK stack, OpenTelemetry) and how alerts should be configured. Provide an architecture diagram showing how each service publishes logs/metrics, how we set up dashboards, and how teams handle incident response.
+```
+
+### Healthcare Application with Compliance and Machine Learning
+
+```text
+Create an architecture for a healthcare application that uses machine learning to predict patient readmissions. The system must comply with HIPAA and handle sensitive patient data securely. Include data ingestion, cleaning, ML model training, and deployment strategies. Highlight user authentication and authorization, encryption, auditing logs, and how you would handle compliance requirements (e.g., data residency, de-identification).
+```
+
+### Serverless Event-Driven Application
+
+```text
+We want a serverless, event-driven system to process real-time streams of user activity data (e.g., clicks, page views, location) and generate analytics dashboards. Propose a cloud-native architecture that uses managed services for event ingestion, processing, and storage. Detail how to handle sudden spikes in traffic, how the data flows through serverless functions, and how to integrate with a real-time analytics dashboard.
+```
+
+###  Custom CRM Platform with AI-driven Insights
+
+```text
+We are building a custom CRM platform for a mid-sized organization. The CRM should track leads, manage customer interactions, and use AI/ML to provide lead-scoring and sales forecasting. Outline a modular, scalable architecture (microservices vs. a monolith?), the data model, and how to incorporate an ML pipeline. Specify recommended DevOps processes, QA strategies, and performance benchmarks to aim for.
+```
 
 Before using this prompt, replace placeholders for your language, frameworks and plugins.
 
