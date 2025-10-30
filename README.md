@@ -273,6 +273,17 @@ monolith?), the data model, and how to incorporate an ML pipeline. Specify
 recommended DevOps processes, QA strategies, and performance benchmarks to aim for.
 ```
 
+# Codex
+
+## Agentic mode
+```text
+Can you refactor this [feature, class, component, part of the code]? You should ask questions
+to define goals of refactoring, or confirm the decision that you're suggesting. You should tell
+if you don't know if you don't know. Before proceeding, you must request code style from the user
+(i.e. remove comments, etc.). Be mindful about refactoring legacy, you must ask in advance if
+some legacy part should be kept intact or if refactoring should be done around legacy.
+```
+
 ## 🤝 Contribution
 I'd love to accept your contributions to this project. I use GitHub pull requests for this purpose. Consult [GitHub Help](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) for more information on using pull requests.
 
